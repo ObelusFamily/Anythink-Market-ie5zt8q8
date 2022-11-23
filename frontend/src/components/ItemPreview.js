@@ -32,6 +32,8 @@ const ItemPreview = (props) => {
   const placeholder = "placeholder.png";
   if (item.image === "") {
     item.image = placeholder;
+    item.src = placeholder;
+    console.log(`imgSrc: ${item.src}`);
   }
 
   return (
