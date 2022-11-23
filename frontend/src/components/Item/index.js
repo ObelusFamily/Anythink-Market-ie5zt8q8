@@ -45,6 +45,7 @@ class Item extends React.Component {
       this.props.currentUser &&
       this.props.currentUser.username === this.props.item.seller.username;
     if (this.props.item.image === "") {
+      this.props.item.src = "../placeholder.png";
       this.props.item.image = "../placeholder.png";
     }
     return (
