@@ -30,7 +30,7 @@ const ItemPreview = (props) => {
   };
 
   if (item.image === "") {
-    item.image = "/placeholder.png";
+    item.image = "placeholder.png";
   }
 
   return (
