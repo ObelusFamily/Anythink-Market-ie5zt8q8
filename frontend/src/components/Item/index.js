@@ -44,11 +44,9 @@ class Item extends React.Component {
     const canModify =
       this.props.currentUser &&
       this.props.currentUser.username === this.props.item.seller.username;
-    
     if (this.props.item.image === "") {
-      this.props.item.image = "../placeholder.png"; 
+      this.props.item.image = "../placeholder.png";
     }
-
     return (
       <div className="container page" id="item-container">
         <div className="text-dark">
